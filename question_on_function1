@@ -1,16 +1,15 @@
 #include<iostream>
 using namespace std;
-int Arthprog(int n)
+int update(int a)
 {
-	return (3*n)+7;
+	int ans=(a*a);
+	return ans;
 }
-
 int main()
 {
-	int n;
-	cout<<"enter the value of n:-"<<endl;
-	cin>>n;
-	cout<<"Nth term of given no is :-  "<<Arthprog(n);
-	//cout<<"Nth term of given no is :-"<<AP;
+	int a=14;
+	//a=update(a);
+	cout<<update(a);
+	cout<<a<<endl;
 return 0;
 }
