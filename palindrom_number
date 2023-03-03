@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Palindrom2 {
+
+    public static void main(String[] args) {
+        Scanner pd=new Scanner(System.in);
+        int num,rem,orgnlno,sum=0;
+        System.out.println("enter a number:-");
+        num=pd.nextInt();
+        orgnlno=num;
+        while (num!=0) {
+            rem=num%10;
+            sum=(sum*10)+rem;
+            num=(num/10);
+        }
+        if (sum==orgnlno) {
+            System.out.println("is palindrom number");
+        }
+        else{
+        System.out.println("not palindrom number");
+        }
+    }
+}
